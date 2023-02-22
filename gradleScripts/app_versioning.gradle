@@ -1,0 +1,64 @@
+ext {
+    nitroVersionCode = 216
+    nitroVersionName = '1.8.8'
+    QAVersion = 7
+
+    hiltAndroidGradle = "2.38.1"
+    hiltCompiler = "1.0.0"
+
+    androidAcivityXVersion = "1.3.1"
+    androidFragmentXVersion = "1.3.2"
+    androidLegacySupport = "1.0.0"
+    androidCoroutines = "1.3.9"
+
+
+    firebaseBomVesion = "28.2.1"
+    karumiVersion = "6.2.2"
+    playCore = "1.8.1"
+    vectorDrawable = "1.1.0"
+    androidPreference = "1.1.1"
+    androidCardView = "1.0.0"
+    androidMultiDex = "2.0.1"
+
+    swiperefreshlayout = "1.1.0"
+    swipeDaimahia = "1.2.0@aar"
+    crashlyticsGradle = "2.8.0"
+    googleGmsService = "4.3.10"
+    googleAppDistribution = "2.2.0"
+    kotlin_version = '1.6.21'
+    detektPluginVersion = "1.20.0"
+    gradleBuild = "4.1.3"
+    okhttpVersion = '4.9.0'
+    glideVersion = '4.12.0'
+    lifecycleVersion = '2.5.1'
+    lifecycleRunTimeVersion = '2.5.1'
+    lifecycleVersionExtension = '2.2.0'
+    rxBindingVersion = '2.2.0'
+    appcompat = '1.5.1'
+    constraintLayoutVersion = "2.1.4"
+    recyclerviewVersion = "1.2.1"
+    retrofitVersion = '2.9.0'
+    scanditVersion = '6.13.1'
+    daggerHiltVersion = '2.38.1'
+    cameraXversion = '1.0.2'
+    cameraXviewVersion = '1.0.0-alpha18'
+    mlkitBarcodeversion = '17.0.2'
+    bumptechVersion = '4.11.0'
+    zXingVersion = '3.3.3'
+    zXingAarVersion = '3.6.0@aar'
+    materialVersion = '1.6.0'
+    appCompileSdkVersion = 33
+    appMinSdkVersion = 21
+    coreVersion = '1.9.0'
+    junitVersion = "4.13.2"
+    mockitoVersion = '4.0.0'
+    mockitoInlineVersion = '2.13.0'
+    coreTestingVersion = '2.0.0'
+    coroutineTesting = '1.6.4'
+
+    jacocoVersion = "0.8.7"
+    sonarVersion = "3.3"
+    amplitudeVersion = "1.5.2"
+
+
+}
