@@ -8,7 +8,7 @@ import com.jonathanbernal.libbase.R
 import com.jonathanbernal.libbase.models.StartActivityModel
 import com.jonathanbernal.libbase.viewmodel.BaseViewModel
 
-class BaseActivity : AppCompatActivity() {
+open class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_base)
