@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:angle="360"
+                android:endColor="@color/aqua"
+                android:startColor="@color/green" />
+            <size
+                android:width="@dimen/spacing_xxlarge"
+                android:height="@dimen/spacing_xxlarge" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="@dimen/radius_micro"
+        android:left="@dimen/radius_micro"
+        android:right="@dimen/radius_micro"
+        android:top="@dimen/radius_micro">
+        <shape android:shape="oval">
+            <solid android:color="#fff" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="@dimen/card_radius"
+        android:left="@dimen/card_radius"
+        android:right="@dimen/card_radius"
+        android:top="@dimen/card_radius">
+        <shape android:shape="oval">
+            <gradient
+                android:angle="360"
+                android:endColor="@color/aqua"
+                android:startColor="@color/green" />
+            <solid android:width="@dimen/spacing_xmicro" />
+            <size
+                android:width="@dimen/spacing_medium"
+                android:height="@dimen/spacing_medium" />
+        </shape>
+    </item>
+</layer-list>
