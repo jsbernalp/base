@@ -4,7 +4,7 @@ import androidx.annotation.CheckResult
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.jonathanbernal.libbase.models.StartActivityModel
-import com.rappi.nitro.base.viewModels.lifecycle.ConsumerLiveData
+import com.jonathanbernal.libbase.viewmodel.lifecycle.ConsumerLiveData
 
 open class BaseViewModel : ViewModel() {
 
