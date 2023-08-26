@@ -2,7 +2,7 @@ package com.jonathanbernal.libbase.widgets.model.views
 
 import com.jonathanbernal.libbase.R
 import com.jonathanbernal.libbase.list.factories.WIDGET_RADIO_BUTTON_GROUP
-import com.rappi.components.widgets.model.SpacingSimpleTextView
+import com.jonathanbernal.libbase.widgets.model.SpacingSimpleTextView
 
 class RadioButtonGroupModelWidget(
     padding: SpacingSimpleTextView = SpacingSimpleTextView(R.dimen.spacing_empty),

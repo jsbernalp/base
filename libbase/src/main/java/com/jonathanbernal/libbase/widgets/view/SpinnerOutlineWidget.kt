@@ -1,4 +1,4 @@
-package com.rappi.components.widgets.view
+package com.jonathanbernal.libbase.widgets.view
 
 import android.content.Context
 import android.util.AttributeSet
@@ -11,11 +11,11 @@ import android.widget.LinearLayout
 import androidx.annotation.AttrRes
 import com.jonathanbernal.libbase.databinding.ViewSpinnerOutlineWidgetBinding
 import com.jonathanbernal.libbase.list.items.GenericItemView
-import com.rappi.components.widgets.actions.WidgetActionSpinnerChange
 import com.jonathanbernal.libbase.widgets.model.ElementSpinner
 import com.jonathanbernal.libbase.widgets.model.SpinnerModelWidget
 import com.jonathanbernal.libbase.widgets.model.views.WEIGHT_RES
-import java.util.Locale
+import com.jonathanbernal.libbase.widgets.actions.WidgetActionSpinnerChange
+import java.util.*
 
 class SpinnerOutlineWidget @JvmOverloads constructor(
     context: Context,

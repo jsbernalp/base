@@ -13,17 +13,17 @@ import androidx.core.widget.doOnTextChanged
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.jonathanbernal.libbase.R
-import com.rappi.components.extensions.addFilterMaxLength
-import com.rappi.components.extensions.addLettersAndDigitsOnlyFilter
-import com.rappi.components.extensions.addLettersOnlyFilter
-import com.rappi.components.extensions.applyDrawable
+import com.jonathanbernal.libbase.extensions.addFilterMaxLength
+import com.jonathanbernal.libbase.extensions.addLettersAndDigitsOnlyFilter
+import com.jonathanbernal.libbase.extensions.addLettersOnlyFilter
+import com.jonathanbernal.libbase.extensions.applyDrawable
 import com.jonathanbernal.libbase.list.items.GenericItemView
-import com.rappi.components.widgets.actions.WidgetActionInputTextChange
-import com.jonathanbernal.libbase.widgets.model.views.RappiInputType
+import com.jonathanbernal.libbase.widgets.actions.WidgetActionInputTextChange
+import com.jonathanbernal.libbase.widgets.model.views.InputTypeOption
 import com.jonathanbernal.libbase.widgets.model.views.TextInputModelWidget
 import com.jonathanbernal.libbase.widgets.model.views.WEIGHT_RES
 
-class TextInputRappiWidget(
+class TextInputWidget(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = com.google.android.material.R.style.Widget_MaterialComponents_TextInputLayout_OutlinedBox,
@@ -117,20 +117,20 @@ class TextInputRappiWidget(
         }
     }
 
-    fun setTypeEditText(type: RappiInputType?) {
+    fun setTypeEditText(type: com.jonathanbernal.libbase.widgets.model.views.InputTypeOption?) {
         when (type) {
-            RappiInputType.TELEPHONE -> editText?.inputType = InputType.TYPE_CLASS_NUMBER
-            RappiInputType.EMAIL ->
+            InputTypeOption.TELEPHONE -> editText?.inputType = InputType.TYPE_CLASS_NUMBER
+            InputTypeOption.EMAIL ->
                 editText?.inputType =
                     InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS
-            RappiInputType.TEXT -> {
+            InputTypeOption.TEXT -> {
                 editText?.inputType = InputType.TYPE_CLASS_TEXT
                 editText?.addLettersOnlyFilter()
             }
-            RappiInputType.PASSWORD ->
+            InputTypeOption.PASSWORD ->
                 editText?.inputType =
                     InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
-            RappiInputType.ALPHANUMERIC -> editText?.addLettersAndDigitsOnlyFilter()
+            InputTypeOption.ALPHANUMERIC -> editText?.addLettersAndDigitsOnlyFilter()
             else -> editText?.inputType = InputType.TYPE_CLASS_TEXT
         }
     }
@@ -166,7 +166,7 @@ class TextInputRappiWidget(
 
     private fun addInputEditText() {
         if (editText == null) {
-            editText = TextInputEditText(this@TextInputRappiWidget.context).apply {
+            editText = TextInputEditText(this@TextInputWidget.context).apply {
                 layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT)
             }
             initListenerTextChange()

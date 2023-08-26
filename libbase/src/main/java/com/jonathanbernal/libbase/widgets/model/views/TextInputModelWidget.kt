@@ -1,11 +1,11 @@
 package com.jonathanbernal.libbase.widgets.model.views
 
 import com.jonathanbernal.libbase.R
-import com.jonathanbernal.libbase.list.factories.WIDGET_INPUT_RAPPI
-import com.rappi.components.widgets.actions.WidgetAction
-import com.rappi.components.widgets.model.DrawableTextModel
-import com.rappi.components.widgets.model.SpacingBoxCornerRadius
-import com.rappi.components.widgets.model.SpacingSimpleTextView
+import com.jonathanbernal.libbase.list.factories.WIDGET_INPUT
+import com.jonathanbernal.libbase.widgets.actions.WidgetAction
+import com.jonathanbernal.libbase.widgets.model.DrawableTextModel
+import com.jonathanbernal.libbase.widgets.model.SpacingBoxCornerRadius
+import com.jonathanbernal.libbase.widgets.model.SpacingSimpleTextView
 
 class TextInputModelWidget(
     var id: String,
@@ -18,7 +18,7 @@ class TextInputModelWidget(
     var boxCornerRadius: SpacingBoxCornerRadius? = null,
     var focusable: Boolean = true,
     var drawable: DrawableTextModel = DrawableTextModel(),
-    var type: RappiInputType? = null,
+    var type: InputTypeOption? = null,
     val maxLength: Int? = null,
     widthRes: Int = -2,
     heightRes: Int = -2,
@@ -32,9 +32,9 @@ class TextInputModelWidget(
     margin = margin,
     action = action
 ) {
-    override fun getId(): Int = WIDGET_INPUT_RAPPI
+    override fun getId(): Int = WIDGET_INPUT
 }
 
-enum class RappiInputType {
+enum class InputTypeOption {
     DEFAULT, TELEPHONE, EMAIL, TEXT, PASSWORD, ALPHANUMERIC
 }

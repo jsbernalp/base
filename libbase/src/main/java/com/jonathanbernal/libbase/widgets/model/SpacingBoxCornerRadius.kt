@@ -1,4 +1,4 @@
-package com.rappi.components.widgets.model
+package com.jonathanbernal.libbase.widgets.model
 
 import androidx.annotation.DimenRes
 

@@ -3,8 +3,7 @@ package com.jonathanbernal.libbase.widgets.model
 import android.view.View
 import androidx.annotation.DrawableRes
 import com.jonathanbernal.libbase.R
-import com.rappi.components.widgets.actions.WidgetAction
-import com.rappi.components.widgets.model.SpacingSimpleTextView
+import com.jonathanbernal.libbase.widgets.actions.WidgetAction
 import com.jonathanbernal.libbase.widgets.model.views.WidgetGravity
 
 data class RadioButtonModelWidget(var text: CharSequence) {

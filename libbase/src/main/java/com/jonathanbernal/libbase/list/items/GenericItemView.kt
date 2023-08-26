@@ -1,7 +1,7 @@
 package com.jonathanbernal.libbase.list.items
 
 import android.view.View
-import com.rappi.components.widgets.listeners.OnSingleClickListener
+import com.jonathanbernal.libbase.widgets.listeners.OnSingleClickListener
 
 interface GenericItemView<T> {
 

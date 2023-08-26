@@ -1,10 +1,10 @@
-package com.rappi.components.extensions
+package com.jonathanbernal.libbase.extensions
 
 import android.graphics.drawable.Drawable
 import android.text.InputFilter
 import android.widget.EditText
 import androidx.appcompat.content.res.AppCompatResources
-import com.rappi.components.widgets.model.DrawableTextModel
+import com.jonathanbernal.libbase.widgets.model.DrawableTextModel
 
 fun EditText.addLettersOnlyFilter() {
     val allowedCharTypes = arrayOf(

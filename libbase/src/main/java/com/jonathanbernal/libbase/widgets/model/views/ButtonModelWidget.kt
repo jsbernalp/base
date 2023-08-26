@@ -2,10 +2,8 @@ package com.jonathanbernal.libbase.widgets.model.views
 
 import com.jonathanbernal.libbase.R
 import com.jonathanbernal.libbase.list.factories.WIDGET_BUTTON
-import com.jonathanbernal.libbase.widgets.model.views.BaseModelWidget
-import com.jonathanbernal.libbase.widgets.model.views.WidgetGravity
-import com.rappi.components.widgets.actions.WidgetAction
-import com.rappi.components.widgets.model.SpacingSimpleTextView
+import com.jonathanbernal.libbase.widgets.actions.WidgetAction
+import com.jonathanbernal.libbase.widgets.model.SpacingSimpleTextView
 
 class ButtonModelWidget(
     val enable: Boolean,

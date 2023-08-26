@@ -1,4 +1,4 @@
-package com.rappi.components.widgets.view
+package com.jonathanbernal.libbase.widgets.view
 
 import android.content.Context
 import android.util.TypedValue
@@ -9,9 +9,9 @@ import android.widget.LinearLayout
 import androidx.appcompat.widget.AppCompatCheckBox
 import androidx.core.content.ContextCompat
 import com.jonathanbernal.libbase.list.items.GenericItemView
-import com.rappi.components.widgets.model.views.CheckBoxModelWidget
 import com.jonathanbernal.libbase.widgets.model.views.WEIGHT_RES
 import com.jonathanbernal.libbase.widgets.model.views.getGravityView
+import com.jonathanbernal.libbase.widgets.model.views.CheckBoxModelWidget
 
 class CheckTextViewWidget(context: Context) :
     LinearLayout(context),

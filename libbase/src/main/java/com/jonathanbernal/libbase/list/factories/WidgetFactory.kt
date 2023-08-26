@@ -5,29 +5,17 @@ import android.view.ViewGroup
 import com.jonathanbernal.libbase.list.items.GenericItemView
 import com.jonathanbernal.libbase.widgets.model.RadioButtonModelWidget
 import com.jonathanbernal.libbase.widgets.model.SpinnerModelWidget
-import com.rappi.components.widgets.model.TextModelWidget
-import com.jonathanbernal.libbase.widgets.model.views.ButtonModelWidget
-import com.rappi.components.widgets.model.views.CheckBoxModelWidget
-import com.jonathanbernal.libbase.widgets.model.views.ImageModelWidget
-import com.jonathanbernal.libbase.widgets.model.views.LinearLayoutModelWidget
-import com.jonathanbernal.libbase.widgets.model.views.RadioButtonGroupModelWidget
-import com.jonathanbernal.libbase.widgets.model.views.TextInputModelWidget
-import com.rappi.components.widgets.view.ButtonViewWidget
-import com.rappi.components.widgets.view.CheckTextViewWidget
-import com.rappi.components.widgets.view.ImageViewWidget
-import com.rappi.components.widgets.view.LinearLayoutViewWidget
-import com.jonathanbernal.libbase.widgets.view.RadioButtonGroupViewWidget
-import com.jonathanbernal.libbase.widgets.view.RadioButtonViewWidget
-import com.rappi.components.widgets.view.SpinnerOutlineWidget
-import com.jonathanbernal.libbase.widgets.view.TextInputRappiWidget
-import com.rappi.components.widgets.view.TextViewWidget
+import com.jonathanbernal.libbase.widgets.model.views.*
+import com.jonathanbernal.libbase.widgets.view.*
+import com.jonathanbernal.libbase.widgets.model.TextModelWidget
+import com.jonathanbernal.libbase.widgets.model.views.CheckBoxModelWidget
 
 const val WIDGET_TEXT = 1009001
 const val WIDGET_PROGRESS_BAR = 1009002
 const val WIDGET_IMAGE_VIEW = 1009003
 const val WIDGET_LINEAR_LAYOUT = 1009004
 const val WIDGET_BUTTON = 1009006
-const val WIDGET_INPUT_RAPPI = 1009007
+const val WIDGET_INPUT = 1009007
 const val WIDGET_SPINNER = 1009008
 const val WIDGET_CHECK_BOX = 1009009
 const val WIDGET_RADIO_BUTTON = 1009010
@@ -52,7 +40,7 @@ open class WidgetFactory : GenericAdapterFactory {
             WIDGET_RADIO_BUTTON_GROUP -> RadioButtonGroupViewWidget(parent.context).apply {
                 setListener(onWidgetListener)
             }
-            WIDGET_INPUT_RAPPI -> TextInputRappiWidget(parent.context).apply {
+            WIDGET_INPUT -> TextInputWidget(parent.context).apply {
                 setTextChangedListener(onWidgetListener)
             }
             WIDGET_SPINNER -> SpinnerOutlineWidget(parent.context).apply {
@@ -100,7 +88,7 @@ open class WidgetFactory : GenericAdapterFactory {
                 bind(widget.first as RadioButtonGroupModelWidget)
                 setListener(listenerItem)
             }
-            WIDGET_INPUT_RAPPI -> TextInputRappiWidget(context).apply {
+            WIDGET_INPUT -> TextInputWidget(context).apply {
                 bind(widget.first as TextInputModelWidget)
                 this.setTextChangedListener(listenerItem)
             }

@@ -2,7 +2,7 @@ package com.jonathanbernal.libbase.widgets.model.views
 
 import com.jonathanbernal.libbase.R
 import com.jonathanbernal.libbase.list.factories.WIDGET_LINEAR_LAYOUT
-import com.rappi.components.widgets.model.SpacingSimpleTextView
+import com.jonathanbernal.libbase.widgets.model.SpacingSimpleTextView
 
 class LinearLayoutModelWidget(
     val orientation: String,

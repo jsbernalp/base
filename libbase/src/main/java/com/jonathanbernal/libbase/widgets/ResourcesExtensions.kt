@@ -1,4 +1,4 @@
-package com.rappi.components.widgets
+package com.jonathanbernal.libbase.widgets
 
 import android.content.Context
 import android.os.Build

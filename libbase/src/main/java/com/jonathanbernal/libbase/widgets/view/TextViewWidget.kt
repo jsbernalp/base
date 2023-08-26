@@ -1,4 +1,4 @@
-package com.rappi.components.widgets.view
+package com.jonathanbernal.libbase.widgets.view
 
 import android.R
 import android.content.Context
@@ -19,22 +19,18 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LifecycleRegistry
 import androidx.lifecycle.MutableLiveData
-import com.rappi.components.extensions.resize
-import com.rappi.components.extensions.rotate
-import com.rappi.components.extensions.tint
 import com.jonathanbernal.libbase.list.items.GenericItemView
-import com.rappi.components.widgets.fromHtml
-import com.rappi.components.widgets.model.DrawableTextModel
-import com.rappi.components.widgets.model.TextModelWidget
 import com.jonathanbernal.libbase.widgets.model.views.BaseModelWidget
 import com.jonathanbernal.libbase.widgets.model.views.LINE_EXTRA_ADD_DIMEN
 import com.jonathanbernal.libbase.widgets.model.views.WEIGHT_RES
 import com.jonathanbernal.libbase.widgets.model.views.getGravityView
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.SupervisorJob
-import kotlinx.coroutines.cancelChildren
-import kotlinx.coroutines.launch
+import com.jonathanbernal.libbase.extensions.resize
+import com.jonathanbernal.libbase.extensions.rotate
+import com.jonathanbernal.libbase.extensions.tint
+import com.jonathanbernal.libbase.widgets.fromHtml
+import com.jonathanbernal.libbase.widgets.model.DrawableTextModel
+import com.jonathanbernal.libbase.widgets.model.TextModelWidget
+import kotlinx.coroutines.*
 import kotlin.coroutines.CoroutineContext
 
 class TextViewWidget(context: Context) :

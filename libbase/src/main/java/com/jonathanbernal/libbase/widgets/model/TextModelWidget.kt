@@ -1,12 +1,8 @@
-package com.rappi.components.widgets.model
+package com.jonathanbernal.libbase.widgets.model
 
 import android.graphics.Typeface
 import android.text.TextUtils
-import androidx.annotation.ColorRes
-import androidx.annotation.DimenRes
-import androidx.annotation.DrawableRes
-import androidx.annotation.IntegerRes
-import androidx.annotation.StyleRes
+import androidx.annotation.*
 import com.jonathanbernal.libbase.R
 import com.jonathanbernal.libbase.list.factories.WIDGET_TEXT
 import com.jonathanbernal.libbase.widgets.model.views.BaseModelWidget

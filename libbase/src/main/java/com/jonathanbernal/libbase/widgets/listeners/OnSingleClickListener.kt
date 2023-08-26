@@ -1,4 +1,4 @@
-package com.rappi.components.widgets.listeners
+package com.jonathanbernal.libbase.widgets.listeners
 
 import android.os.SystemClock
 import android.view.View

@@ -1,4 +1,4 @@
-package com.rappi.nitro.base.viewModels.lifecycle
+package com.jonathanbernal.libbase.viewmodel.lifecycle
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.MutableLiveData

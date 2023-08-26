@@ -4,8 +4,8 @@ import android.graphics.Bitmap
 import androidx.annotation.DimenRes
 import com.jonathanbernal.libbase.R
 import com.jonathanbernal.libbase.list.factories.WIDGET_IMAGE_VIEW
-import com.rappi.components.widgets.actions.WidgetAction
-import com.rappi.components.widgets.model.SpacingSimpleTextView
+import com.jonathanbernal.libbase.widgets.actions.WidgetAction
+import com.jonathanbernal.libbase.widgets.model.SpacingSimpleTextView
 
 class ImageModelWidget(
     val backgroundUrl: String? = null,

@@ -1,4 +1,4 @@
-package com.rappi.components.widgets.actions
+package com.jonathanbernal.libbase.widgets.actions
 
 import android.net.Uri
 import android.os.Bundle

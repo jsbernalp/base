@@ -1,4 +1,4 @@
-package com.rappi.components.extensions
+package com.jonathanbernal.libbase.extensions
 
 import android.content.Context
 import androidx.annotation.DrawableRes

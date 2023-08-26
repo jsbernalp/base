@@ -1,4 +1,4 @@
-package com.rappi.components.widgets.model
+package com.jonathanbernal.libbase.widgets.model
 
 class ProgressBarModelWidget(
     val maxCount: Int = 1,

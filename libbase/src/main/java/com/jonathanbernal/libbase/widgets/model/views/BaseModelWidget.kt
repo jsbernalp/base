@@ -5,8 +5,8 @@ import android.view.Gravity
 import androidx.lifecycle.MutableLiveData
 import com.jonathanbernal.libbase.R
 import com.jonathanbernal.libbase.list.items.GenericItemAbstract
-import com.rappi.components.widgets.actions.WidgetAction
-import com.rappi.components.widgets.model.SpacingSimpleTextView
+import com.jonathanbernal.libbase.widgets.actions.WidgetAction
+import com.jonathanbernal.libbase.widgets.model.SpacingSimpleTextView
 
 const val WIDGET_TYPE_TEXT = "text"
 const val WIDGET_TYPE_IMAGE = "image"

@@ -2,7 +2,6 @@ package com.jonathanbernal.libbase.widgets.model
 
 import com.jonathanbernal.libbase.R
 import com.jonathanbernal.libbase.list.factories.WIDGET_SPINNER
-import com.rappi.components.widgets.model.SpacingSimpleTextView
 import com.jonathanbernal.libbase.widgets.model.views.BaseModelWidget
 import com.jonathanbernal.libbase.widgets.model.views.WRAP_PARENT_VALUE
 

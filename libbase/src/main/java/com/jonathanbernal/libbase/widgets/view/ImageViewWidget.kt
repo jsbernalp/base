@@ -1,4 +1,4 @@
-package com.rappi.components.widgets.view
+package com.jonathanbernal.libbase.widgets.view
 
 import android.content.Context
 import android.content.res.ColorStateList
@@ -18,8 +18,8 @@ import com.jonathanbernal.libbase.widgets.model.views.ImageModelWidget
 import com.jonathanbernal.libbase.widgets.model.views.MATCH_PARENT_VALUE
 import com.jonathanbernal.libbase.widgets.model.views.WEIGHT_RES
 import com.jonathanbernal.libbase.widgets.model.views.WRAP_PARENT_VALUE
-import com.rappi.components.extensions.getDrawableCompat
-import com.rappi.components.extensions.tintWithHexColor
+import com.jonathanbernal.libbase.extensions.getDrawableCompat
+import com.jonathanbernal.libbase.extensions.tintWithHexColor
 
 class ImageViewWidget(context: Context) :
     AppCompatImageView(context),
